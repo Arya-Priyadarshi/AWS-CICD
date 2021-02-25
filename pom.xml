@@ -11,7 +11,7 @@
 	<groupId>codepipeline.aws.springboot</groupId>
 	<artifactId>codepipeline.aws.springboot</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<!-- <packaging>war</packaging> -->
 	<name>codepipelineAwsSpringboot</name>
 	<description>Project for codepipeline aws springboot</description>
 	<properties>
@@ -41,32 +41,12 @@
 
 	<build>
 		<plugins>
-		<plugin><!-- don't pack the war  -->
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-war-plugin</artifactId>
-				<executions>
-					<execution>
-						<id>default-war</id>
-						<phase>none</phase>
-					</execution>
-					<execution>
-						<id>war-exploded</id>
-						<configuration>
-							<webappDirectory>target/deploy</webappDirectory>
-							<archiveClasses>true</archiveClasses>
-						</configuration>
-						<phase>prepare-package</phase>
-						<goals>
-							<goal>exploded</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		<finalName>codepipelineAwsSpringboot</finalName>
 	</build>
 
 </project>
