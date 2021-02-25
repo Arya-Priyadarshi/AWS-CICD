@@ -11,7 +11,6 @@
 	<groupId>codepipeline.aws.springboot</groupId>
 	<artifactId>codepipeline.aws.springboot</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<!-- <packaging>war</packaging> -->
 	<name>codepipelineAwsSpringboot</name>
 	<description>Project for codepipeline aws springboot</description>
 	<properties>
